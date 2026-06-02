@@ -1,194 +1,347 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Developer Profile</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <div class="navbar">
-      <a href="#home">Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-    </div>
-</header>
-<main>
-  <div id="opening">
-    <div id="opening-content">
+  <header class="hero" id="top">
+    <div class="container hero-grid">
+      <div class="hero-content">
         <h1>Sam Williams</h1>
-        <h2>Software Developer | AI | Data</h2>
-        <a href="#" class="btn-rounded-white">Download CV</a>
-    </div>
-  </div>    
-  <div id="about">
-    <h1>About me</h1>
-    <p>
-        My career has focused on the usage of AI and data within computerised systems 
-        to create the best systems and resources to leverage, gain insights, and  
-        promote better data-driven decision-making to drive company growth.
-    </p>
+        <p class="tagline">Data Analytics | Spatial Data | AI Applications</p>
+      </div>
 
-    <p>
-        My desire is to continue coding, developing application software and web 
-        based resources to provide data services that enable users to easily harness 
-        the power of their own data.
-    </p>
-  </div>
-  <div id="experience">
-    <h1>Experience</h1>
-      <p id="jobTitle">Head, Innovation & Platform Development</p> 
-      <p id="jobCompany">Straits Interactive, Singapore</p>
-      <p id="jobDate">Feb 2023 - present</p>
-    <ul>
-      <li>Developing Capabara Knowledge System (featuring the worlds first AI Data Protection Officer)</li>
-      <li>Azure OpenAI LLMs, Python, Django, REST API, Azure OpenAI (GPT-3, GPT-3.5, GPT-4), Azure Cognitive search</li>
-      <li>Lead international development team for Capabara Capability-as-a-Service (CaaS):</li>
-      <ul>
-        <li>Capabara Platform</li>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+      <div class="profile-image">
+        <img src="images/hero_section.png" alt="Profile hero section image">
+        <ul class="contact-list hero-image-contact" aria-label="Contact details">
+          <li><i class="bi bi-envelope-fill contact-icon" aria-hidden="true"></i><span class="sr-only">Email:</span> <a href="mailto:samw.singapore@gmail.com">samw.singapore@gmail.com</a></li>
         </ul>
-        <li>Capabara Knowledge System</li>
-        <ul>
-          <li>Retrieval Augmented Generation (RAG) system for SMEs</li>
-          <li>Worlds first AI Data Protection Officer</li>
-          <li>Python Django REST, Azure OpenAI LLM, Llamaindex, Nextjs</li>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section intro intro-focus quote-focus">
+      <div class="container">
+        <blockquote class="summary-quote">
+          <p>
+            My career has focused on the usage of data and how to manipulate data sources within computerised systems into the best resources.
+            Projects have included 2D data, enhancing 2D data with spatial data to complex 3D mapping data for pipeline surveys and providing
+            simulation of ROV environments for training missions.
+          </p>
+          <p>
+            My desire is to continue developing data services that enable users to harness, visualise and benefit from the power of varied data sources.
+          </p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section education-focus">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="card-grid education-grid">
+          <article class="card education-card">
+            <div class="education-logo education-logo-image">
+              <img src="images/university_of_cumbria_logo.jpeg" alt="University of Cumbria logo">
+            </div>
+            <div class="education-content">
+              <h3>MSc Data Analytics (Distinction)</h3>
+              <p class="meta">University of Cumbria | 2020 - 2022</p>
+              <p>
+                Dissertation: A study of machine learning algorithms used within data analysis to determine property pricing prediction models
+                for homogenous public housing in Singapore.
+              </p>
+            </div>
+          </article>
+          <article class="card education-card">
+            <div class="education-logo education-logo-image">
+              <img src="images/north_east_scotland_college_logo.jpeg" alt="North East Scotland College logo">
+            </div>
+            <div class="education-content">
+              <h3>HND Professional Photography &amp; Imaging</h3>
+              <p class="meta">Aberdeen College | 2001 - 2003</p>
+            </div>
+          </article>
+          <article class="card education-card">
+            <div class="education-logo education-logo-image">
+              <img src="images/robertgordonuniversity_logo.jpeg" alt="Robert Gordon University logo">
+            </div>
+            <div class="education-content">
+              <h3>HND Computer Science</h3>
+              <p class="meta">Robert Gordon University | 1995 - 1999</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section accent cert-focus">
+      <div class="container">
+        <h2>Certifications</h2>
+        <ul class="pill-list cert-list pill-centered">
+          <li class="cert-pill">
+            <a class="pill-link" href="https://www.credly.com/badges/c1d053e4-6138-4a6a-872e-541b311929e9?source=linked_in_profile" target="_blank" rel="noopener noreferrer">
+              <span class="cert-logo"><img src="images/google_logo.jpeg" alt="Google logo"></span>
+              <span>Google Data Analytics</span>
+            </a>
+          </li>
+          <li class="cert-pill">
+            <a class="pill-link" href="https://www.coursera.org/account/accomplishments/specialization/N4SMETBVWWH4" target="_blank" rel="noopener noreferrer">
+              <span class="cert-logo"><img src="images/university_of_toronto_logo.jpeg" alt="University of Toronto logo"></span>
+              <span>GIS, Mapping, and Spatial Analysis</span>
+            </a>
+          </li>
+          <li class="cert-pill">
+            <a class="pill-link" href="https://www.coursera.org/account/accomplishments/professional-cert/77JC9PSUC558" target="_blank" rel="noopener noreferrer">
+              <span class="cert-logo"><img src="images/ibm_logo.jpeg" alt="IBM logo"></span>
+              <span>IBM Data Science</span>
+            </a>
+          </li>
+          <li class="cert-pill">
+            <a class="pill-link" href="https://www.credly.com/badges/ee01826c-378a-4078-a9c1-90555a75e358?source=linked_in_profile" target="_blank" rel="noopener noreferrer">
+              <span class="cert-logo"><img src="images/ibm_logo.jpeg" alt="IBM logo"></span>
+              <span>IBM Data Engineering</span>
+            </a>
+          </li>
         </ul>
-        <li>Capabara Capability Management</li>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+      </div>
+    </section>
+
+    <section class="section skills-focus">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="pill-list cert-list pill-centered">
+          <li class="cert-pill">
+            <span class="cert-logo"><img src="images/python-logo-only.png" alt="Python logo"></span>
+            <span>Python</span>
+          </li>
+          <li class="cert-pill">
+            <span class="cert-logo"><img src="images/Django.png" alt="Django logo"></span>
+            <span>Django</span>
+          </li>
+          <li class="cert-pill">
+            <span class="cert-logo" aria-label="Django REST Framework skill logo placeholder">Logo</span>
+            <span>Django REST Framework</span>
+          </li>
+          <li class="cert-pill">
+            <span class="cert-logo"><img src="images/JavaScript.png" alt="JavaScript logo"></span>
+            <span>JavaScript</span>
+          </li>
+          <li class="cert-pill">
+            <span class="cert-logo"><img src="images/qgis-icon64.png" alt="QGIS logo"></span>
+            <span>QGIS</span>
+          </li>
+          <li class="cert-pill">
+            <span class="cert-logo"><img src="images/ArcGIS_Pro.png" alt="ArcGIS Pro logo"></span>
+            <span>ArcGIS</span>
+          </li>
+          <li class="cert-pill">
+            <span class="cert-logo"><img src="images/Google Cloud.png" alt="Google Cloud logo"></span>
+            <span>Google Cloud</span>
+          </li>
+          <li class="cert-pill">
+            <span class="cert-logo"><img src="images/Azure.png" alt="Azure logo"></span>
+            <span>Azure</span>
+          </li>
+          <li class="cert-pill">
+            <span class="cert-logo"><img src="images/Git.png" alt="Git logo"></span>
+            <span>Git</span>
+          </li>
+          <li class="cert-pill">
+            <span class="cert-logo"><img src="images/MongoDB.png" alt="MongoDB logo"></span>
+            <span>MongoDB</span>
+          </li>
+          <li class="cert-pill">
+            <span class="cert-logo"><img src="images/PostgresSQL.png" alt="PostgreSQL logo"></span>
+            <span>PostgreSQL</span>
+          </li>
+          <li class="cert-pill">
+            <span class="cert-logo"><img src="images/HTML5.png" alt="HTML5 logo"></span>
+            <span>HTML</span>
+          </li>
+          <li class="cert-pill">
+            <span class="cert-logo"><img src="images/CSS3.png" alt="CSS logo"></span>
+            <span>CSS</span>
+          </li>
         </ul>
-      </ul>
-      <li>Technologies used:</li>
-      <ul>
-        <li>Python, Django REST, Azure OpenAI LLMs</li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      <li>Support lecturing at Singapore Management University Academy</li>
-      <ul>
-        <li>A Practical Approach to Generative AI</li>
-        <li>Prompt Engineering - Conversational AI & Design</li>
-      </ul>      
-    </ul>      
-    <p>
-      Software Developer
-      Pulse Data Technologies, Malaysia (Remote)
-      Dec 2022 - Feb 2023
-    </p>
-    <p>
-      Creating a digital transformation, operation, and analytic application for hospitals
-      PHP (Laravel), Vue, MySQL
-      Developing data cleansing strategy
-      Designing  data analytic dashboards
-      Database administration      
-    </p>
-    <p>
-      Business Consultant 
-      57to1, Singapore
-      Nov 2017 - Dec 2020      
-    </p>
-    <p>
-      Developed company expansion business plans in Singapore / Asia from UK
-      Generated marketing sentiment and competitor analysis using data science methods
-      Prepared predictive financial analysis based on market penetration
-      Presentation of findings and recommendations to stakeholders      
-    </p>
-    <p>
-      Tooling Manager / Rental Operations Manager
-      Forum Energy Asia Pacific Pte Ltd, Singapore
-      Aug 2013 - Oct 2017      
-    </p>
-    <p>
-      Developed data analytics process for sales and engineering scheduling & forecasting
-      Automated data driven stock control, reducing lead times by 80% and stock holding by 45%
-      Designed and deployed ISO Quality System with feedback and analysis
-      Created technical reporting & resolution system for trend analysis      
-    </p>
-    <p>
-      Tooling Manager 
-      Forum Energy Technologies, Aberdeen
-      Jan 2013 - Aug 2013      
-    </p>
-    <p>
-      Technical support for Observation Remote Operated Vehicle (ROV) sales team
-      Technical support VMAX simulation and Visualsoft Data Acquisition and processing systems
-      Produced competition analysis to lead development of new products
-      Created sales & reporting dashboards      
-    </p>
-    <p>
-      General Manager
-      Specialist ROV Tooling Services Ltd, Aberdeenshire
-      (Sold company to Forum Energy Technologies)
-      Aug 2008 - Dec 2012      
-    </p>
-    <p>
-      Design and development of company website, marketing materials and campaigns
-      Implemented data driven stock control systems resulting 30% procurement saving
-      Created, implemented, and managed ISO quality system including analysis & reporting
-      Project Management of customer owned Remote Operated Vehicle (ROV) and associated
-      equipment upgrades and repairs      
-    </p>
-    <p>
-      Global IT Manager
-      C&M Group Ltd, Aberdeen
-      Oct 2005 - Aug 2008      
-    </p>
-    <p>
-      Management, implementation, and deployment of worldwide IT systems for 250+ personnel
-      Created SharePoint Services document management and control systems
-      Project managed new office facilities in Mobile AL (USA), Newcastle (UK), Aberdeen (UK)      
-    </p>
-    <p>
-      UNIX Systems Administrator
-      Marathon Oil UK Ltd, Aberdeen
-      May 1998 - Aug 1999      
-    </p>
-    <p>
-      UNIX administration (installation, configuration, and maintenance) SGI & Sun Microsystems
-      Create scripts for administration automation, backup & recovery
-      Database management - Exploration DB & CIMAGE DB
-      Backup and recovery     
-    </p>
-  </div>
-  <div id="education">
-    <h1>Education</h1>
-    <p>
-        HND Computer Science
-        MSc Data Analytics (Distinction)
-        HND Photography & Imaging
-    </p>
-  </div>
-  <div id="certificates">
-    <h1>Professional Certificates</h1>
-    <p>
-        IBM Data Science
-        Google Data Analytics
-        IBM Data Engineering
-    </p>
-  </div>
-  <div id="projects">
-    <h1>Projects</h1>
-  </div>
-  <div id="skills">
-    <h1>Skills</h1>
-  </div>
-  <div id="contact">
-    <h1>Contact</h1>
-  </div>
-</main>
-<footer>
-  <p>&copy; 2025 Sam Williams</p>
-</footer>
+      </div>
+    </section>
+
+    <section class="section work-focus">
+      <div class="container">
+        <h2>Work Experience</h2>
+
+        <article class="experience-card">
+          <div class="experience-logo experience-logo-image">
+            <img src="images/straits.jpeg" alt="Straits Interactive logo">
+          </div>
+          <div class="experience-content">
+            <div class="experience-head">
+              <h3>Head, Innovation &amp; Platform Development</h3>
+              <p class="experience-date">Feb 2023 - Present</p>
+              <p class="meta experience-company">Straits Interactive, Singapore</p>
+            </div>
+            <p>
+              Developing innovative products using Artificial Intelligence and orchestrating the technical transition to a serverless CI/CD architecture on Google Cloud Platform.
+            </p>
+            <p>Design and development of web based AI applications: <a href="https://capabara.com/" target="_blank" rel="noopener noreferrer">capabara.com</a></p>
+            <ul>
+              <li><strong>Capabara Knowledge System (sole developer):</strong> World's first AI Data Protection Officer using Retrieval Augmented Generation (RAG).</li>
+              <li><strong>Capabara Platform:</strong> SSO auth and e-commerce engine as central entry point for all Capabara apps.</li>
+              <li><strong>Capabara Capability Management:</strong> Task collaboration, record tracking and notification engine.</li>
+              <li><strong>Learning Management System (LMS):</strong> Training and learning platform support.</li>
+              <li><strong>Capabara Responsible AI:</strong> Red teaming app and API service to verify tools and prompts against prompt injection, prompt leakage and jailbreak attacks.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-logo experience-logo-image">
+            <img src="images/pulse_data_technologies_logo.jpeg" alt="Pulse Data Technologies logo">
+          </div>
+          <div class="experience-content">
+            <div class="experience-head">
+              <h3>Software Developer</h3>
+              <p class="experience-date">Dec 2022 - Feb 2023</p>
+              <p class="meta experience-company">Pulse Data Technologies, Malaysia (Remote)</p>
+            </div>
+            <p>
+              Developed a digital transformation, operation, and analytic application for hospitals.
+              Technology stack included PHP, Vue and MySQL.
+            </p>
+            <p><a href="https://www.linkedin.com/company/pulse-data-technologies/posts/?feedView=all" target="_blank" rel="noopener noreferrer">pulsedt.tech</a></p>
+          </div>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-logo experience-logo-image">
+            <img src="images/57to1.jpeg" alt="57to1 logo">
+          </div>
+          <div class="experience-content">
+            <div class="experience-head">
+              <h3>Business Consultant</h3>
+              <p class="experience-date">Nov 2017 - Dec 2022</p>
+              <p class="meta experience-company">57to1, Singapore</p>
+            </div>
+            <ul>
+              <li>Developed company expansion business plans in Singapore and Asia from the UK.</li>
+              <li>Used Python web scraping for competitor analysis.</li>
+              <li>Prepared predictive financial analysis.</li>
+              <li>Presented findings and recommendations to stakeholders.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-logo experience-logo-image">
+            <img src="images/forum_energy_technologies_logo.jpeg" alt="Forum Energy Technologies logo">
+          </div>
+          <div class="experience-content">
+            <div class="experience-head">
+              <h3>Tooling Manager / Rental Operations Manager</h3>
+              <p class="experience-date">Aug 2013 - Oct 2017</p>
+              <p class="meta experience-company">Forum Energy Asia Pacific Pte Ltd, Singapore</p>
+            </div>
+            <ul>
+              <li>Supported client VMAX simulation and Visualsoft Data Acquisition projects.</li>
+              <li>Developed data analytics process for sales and engineering scheduling and forecasting.</li>
+              <li>Reviewed engineering drawings for fault rectification and servicing requirements.</li>
+              <li>Created technical reporting and resolution system for trend analysis.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-logo experience-logo-image">
+            <img src="images/forum_energy_technologies_logo.jpeg" alt="Forum Energy Technologies logo">
+          </div>
+          <div class="experience-content">
+            <div class="experience-head">
+              <h3>Tooling Manager</h3>
+              <p class="experience-date">Jan 2013 - Aug 2013</p>
+              <p class="meta experience-company">Forum Energy Technologies, Aberdeen</p>
+            </div>
+            <ul>
+              <li>Technical support for Observation Remote Operated Vehicle (ROV) sales team.</li>
+              <li>Supported client VMAX simulation and Visualsoft Data Acquisition projects.</li>
+              <li>Produced competition analysis to lead development of new products.</li>
+              <li>Reviewed engineering drawings for fault rectification and servicing requirements.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-logo experience-logo-image">
+            <img src="images/forum_energy_technologies_logo.jpeg" alt="Forum Energy Technologies logo">
+          </div>
+          <div class="experience-content">
+            <div class="experience-head">
+              <h3>General Manager</h3>
+              <p class="experience-date">Aug 2008 - Dec 2012</p>
+              <p class="meta experience-company">Specialist ROV Tooling Services Ltd, Aberdeenshire</p>
+            </div>
+            <p class="meta">Company sold to Forum Energy Technologies.</p>
+            <ul>
+              <li>Managed customer-owned ROV equipment upgrades and repairs.</li>
+              <li>Prepared 3D CAD of mechanical parts and components for manufacture.</li>
+              <li>Implemented data driven stock control systems resulting in 30% procurement saving.</li>
+              <li>Created and managed ISO quality systems including analysis and reporting.</li>
+              <li>Designed and developed company website, marketing materials and campaigns.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-logo experience-logo-image">
+            <img src="images/ice_maiden.png" alt="Ice Maiden logo">
+          </div>
+          <div class="experience-content">
+            <div class="experience-head">
+              <h3>Global IT Manager</h3>
+              <p class="experience-date">Oct 2005 - Aug 2008</p>
+              <p class="meta experience-company">C&amp;M Group Ltd, Aberdeen</p>
+            </div>
+            <ul>
+              <li>Managed implementation and deployment of worldwide IT systems for 250+ personnel.</li>
+              <li>Created and managed SharePoint Services document management and control systems.</li>
+              <li>Project managed new office facilities in Mobile AL (USA), Newcastle (UK), Aberdeen (UK).</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-logo experience-logo-image">
+            <img src="images/marathon_petroleum_company_logo.jpeg" alt="Marathon Petroleum Company logo">
+          </div>
+          <div class="experience-content">
+            <div class="experience-head">
+              <h3>UNIX Systems Administrator</h3>
+              <p class="experience-date">May 1998 - Aug 1999</p>
+              <p class="meta experience-company">Marathon Oil UK Ltd, Aberdeen</p>
+            </div>
+            <ul>
+              <li>Database management for Exploration DB (exploitation survey plots).</li>
+              <li>Database management for CIMAGE DB (topside and subsea structures).</li>
+              <li>UNIX administration of SGI and Sun Microsystems within UK and Norwegian sectors.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Sam Williams</p>
+    </div>
+  </footer>
 </body>
 </html>
